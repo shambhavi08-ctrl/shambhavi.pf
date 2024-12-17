@@ -1,0 +1,15 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "files.autoSave": "afterDelay",
+    "[html]": {
+        "editor.defaultFormatter": "svipas.prettier-plus"
+    },
+    "todohighlight.keywords": [
+        {
+            "text": "NOTE:",
+            "color": "#ff0000",
+            "backgroundColor": "blue",
+            "overviewRulerColor": "grey"
+        },
+    ]
+}

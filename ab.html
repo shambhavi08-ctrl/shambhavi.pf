@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #c2505d; 
+            font-family: 'Arial', sans-serif;
+        }
+
+        .about-section {
+            position: relative;
+            padding: 10vh 5vw; /* Adjusted for responsive spacing */
+            overflow: hidden;
+        }
+
+        .about-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23FFC0CB" d="M0,224L48,208C96,192,192,160,288,154.7C384,149,480,171,576,181.3C672,192,768,192,864,186.7C960,181,1056,171,1152,160C1248,149,1344,139,1392,133.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat;
+            background-size: cover;
+            opacity: 0.3; 
+            z-index: -1;
+        }
+
+        .about-text {
+            max-width: 60vw; /* Adjusted width */
+            z-index: 1; 
+            text-align: justify;
+        }
+
+        .about-text h1 {
+            font-size: 5vh; /* Larger font size */
+            font-weight: bold;
+            color: #f8dfd6; 
+        }
+
+        .about-text p {
+            font-size: 2.5vh; /* Larger paragraph font */
+            color: #ffffff;
+            margin: 4vh 0;
+            line-height: 1.8;
+        }
+
+        .btn-primary {
+            background-color: #723434;
+            border: none;
+            font-size: 2.5vh; /* Larger button font size */
+            padding: 2vh 4vw; /* Adjusted padding */
+            border-radius: 2vh;
+        }
+
+        .btn-primary:hover {
+            background-color: #F37B86; 
+        }
+
+        .images-section {
+            position: relative;
+            height: 50vh; /* Adjusted height */
+        }
+
+        .images-section .image-1,
+        .images-section .image-2 {
+            position: absolute;
+            border: 1vh solid #FFF8F8; /* Responsive border size */
+            box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.1);
+            width: 25vw; /* Adjusted for responsive scaling */
+            height: 25vw; /* Maintain square dimensions */
+            object-fit: cover;
+        }
+
+        .images-section .image-1 {
+            top: 2vh; 
+            left: 2vw;
+            transform: rotate(-8deg);
+        }
+
+        .images-section .image-2 {
+            top: 2vh; 
+            left: 28vw; /* Adjusted position */
+            transform: rotate(8deg);
+        }
+
+        .abstract-section {
+            text-align: center;
+            color: #ffffff;
+            font-size: 2.5vh;
+            margin-top: 5vh;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <section class="about-section container-fluid">
+        <div class="row align-items-center">
+            
+            <div class="col-md-6 about-text">
+                <h1>About Me</h1>
+                <p>
+                    I’m currently pursuing my B-des degree in Communication Design from Atlasskilltech University Mumbai. I have a passion for creating designs that tell compelling stories and connect with people. My journey in design started with a deep interest in visual arts and grew into a desire to craft meaningful solutions for brands and individuals.
+                    Through my academic assignments and observership, I’ve had the opportunity to work with a diverse range of projects, developing everything from brand identities to packaging and digital designs.
+                    I believe in the importance of collaboration and always strive to stay curious and open to new ideas, which helps me evolve as a designer. When I’m not designing, you’ll find me exploring new artistic mediums, keeping up with design trends, or simply enjoying the beauty of everyday life.
+                </p>
+                
+                <a href="./contact me.html">
+                    <button class="btn btn-primary">Contact Me</button>
+                </a>
+            </div>
+
+            <div class="col-md-6 images-section position-relative">
+                <img src="./WhatsApp Image 2024-12-10 at 22.44.50_b7275701.jpg" class="image-1" alt="Polaroid 1">
+                <img src="./ddd2ed2ea2533503221c87dc9ac6b27e.jpg" class="image-2" alt="Polaroid 2">
+            </div>
+        </div>
+        
+        <!-- Abstract Section Added Below -->
+        <div class="abstract-section">
+            <p>
+              <b>  Design is not just about aesthetics; it’s about creating meaningful connections. Every design decision is a step towards telling a story, solving a problem, and engaging an audience. I aim to keep pushing the boundaries of creativity, blending art and functionality in every project I work on.
+            </b> </p>
+        </div>
+    </section>
+
+</body>
+</html>

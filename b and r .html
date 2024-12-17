@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branding and Rebranding Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8dfd6; 
+        }
+
+        .layout-container {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .text-section {
+            flex: 1;
+            max-width: 30%;
+            background-color: #fff; 
+            color: #c2505d; 
+            padding: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: justify;
+            border-radius: 15px; /
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+        }
+
+        .text-section h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .text-section p {
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .image-section {
+            flex: 2;
+            max-width: 65%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+
+        .image-box {
+            width: 100%;
+            padding-top: 100%; 
+            background-color: #fff7d4; 
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+        }
+
+        .image-box img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px; 
+        }
+
+        
+        .image-box:hover {
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+
+        
+        @media (max-width: 768px) {
+            .layout-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .text-section {
+                max-width: 90%;
+                margin-bottom: 20px;
+            }
+
+            .image-section {
+                grid-template-columns: 1fr; 
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout-container">
+        
+        <div class="text-section">
+            <h2>Branding and Rebranding</h2>
+            <p>
+                A collection of branding and rebranding projects I’ve worked on for diverse brands like Lipton Green Tea, Emeri Jewellery, and Skyline Architects. This section showcases my approach to crafting compelling visual identities and packaging solutions that resonate with target audiences. Each project reflects my academic and observership experience, where I’ve combined creativity with strategic design principles to bring brands to life through logos, packaging, and other visual elements. Take a closer look at how I transform brand concepts into engaging, memorable designs.
+            </p>
+        </div>
+
+        
+        <div class="image-section">
+            <a href="./je.html" class="image-box">
+                <img src="./Screenshot 2024-12-03 192619.png" alt="Image 1 Placeholder">
+            </a>
+            <a href="./ccc.html" class="image-box">
+                <img src="./Screenshot 2024-12-03 192728.png" alt="Image 2 Placeholder">
+            </a>
+            <a href="./lipton align.html" class="image-box">
+                <img src="./Screenshot 2024-12-03 193355.png" alt="Image 3 Placeholder">
+            </a>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url(./b6da4af7337870db41cf1dc8ed867f00.jpg); 
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.8); 
+      padding: 40px;
+      height: 100%; 
+    }
+    .image-placeholder {
+      background-color: #28a745;
+      width: 100%;
+      height: 200px; 
+    }
+    .image-large {
+      height: 300px; 
+    }
+    .image-top-right {
+      width: 100%; 
+      height: 141.4%; 
+      max-width: 400px; 
+      object-fit: cover; 
+    }
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .text-content {
+      text-align: justify;
+      color: #0d480a; 
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    
+    h1 {
+      color: #043f15; 
+      font-family: 'Times New Roman', Times, serif;
+      }
+    
+    .text-dark {
+      color: #555555; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container text-dark py-5 overlay">
+    <div class="content-wrapper">
+      <h1 class="mb-4 text-center">LIPTON</h1>
+      
+      
+      <div class="row mb-4">
+        <div class="col-md-3 d-flex align-items-center justify-content-center">
+          
+          <a href="#"><img src="./Screenshot 2024-12-03 193355.png" alt="Logo" class="img-fluid image-placeholder"></a>
+        </div>
+        <div class="col-md-6">
+          
+          <p class="text-content">
+            The Lipton Green Tea campaign redesign focuses on refreshing the brand's identity with a modern and natural aesthetic. The logo features a single, elegant green tea leaf that curves around the bottom portion of a sun disc, symbolizing the natural ingredients and the refreshing, rejuvenating nature of the product. The sun, with its bright rays against a yellow-orange gradient circle, conveys positivity, energy, and warmth, creating a friendly and approachable vibe. The color palette incorporates shades of green to represent freshness, while the vibrant yellow-orange gradient adds vitality. This redesign is applied across various touchpoints, including packaging, billboards, and posters, all of which reinforce the message of natural refreshment and appeal to health-conscious consumers. The overall concept aims to create a visual identity that feels both modern and welcoming, aligning with Lipton's mission of providing a refreshing, nature-inspired experience.
+          </p>
+        </div>
+        <div class="col-md-3 d-flex align-items-center justify-content-center">
+          
+          <a href="#"><img src="./Screenshot 2024-12-03 212221.png" alt="Image 1" class="img-fluid image-top-right"></a>
+        </div>
+      </div>
+      
+      
+      <div class="row">
+        <div class="col-md-6">
+          
+          <a href="#"><img src="./Screenshot 2024-12-03 212200.png" alt="Image 2" class="img-fluid image-placeholder image-large"></a>
+        </div>
+        <div class="col-md-6">
+          
+          <a href="#"><img src="./Screenshot 2024-12-03 211939.png" alt="Image 3" class="img-fluid image-placeholder image-large"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+</body>
+</html>
