@@ -27,28 +27,45 @@
             opacity: 0.3;
             z-index: -1; 
         }
+
+        /* Main title styling with bold on hover */
         .main-title {
-            font-size: 2.5rem;
+            font-size: 5rem;
             text-align: center;
             font-family: 'Times New Roman', Times, serif;
+            transition: font-size 0.3s ease, font-weight 0.3s ease; /* Transition for font weight */
         }
+        
+        .main-title:hover {
+            font-size: 5.2rem; /* Increase font size on hover */
+            font-weight: bold; /* Make text bold on hover */
+        }
+
         .content-box {
             padding: 20px;
         }
+
         .image-box {
             border-radius: 15px; 
             overflow: hidden;
             position: relative;
             background-color: #fff; 
         }
+
         .image-box img {
             width: 100%;
             height: auto; 
             object-fit: cover; 
         }
+
         p {
             text-align: justify; 
             font-family: 'Times New Roman', Times, serif;
+            transition: font-size 0.3s ease, font-weight 0.3s ease; /* Transition for font weight */
+        }
+
+        p:hover {
+            font-weight: bold; /* Make text bold on hover */
         }
     </style>
 </head>
@@ -68,14 +85,12 @@
                 </a>
             </div>
 
-            
             <div class="col-4 text-center">
                 <p>
                     I designed a comprehensive campaign for a fictional brand, Skyline Architects, showcasing its focus on modern and innovative architectural solutions. The campaign includes a sleek, contemporary logo that embodies precision and creativity, aligning with the brand's identity. Posters and billboards feature minimalist designs and impactful visuals, effectively communicating the brand's vision. The visiting card blends professionalism with artistic flair, leaving a memorable impression. The website is designed to be responsive and user-friendly, presenting Skyline Architects' projects, services, and ethos through a clean and visually engaging layout. Together, these elements reflect the brand's commitment to inspiring and functional design.
                 </p>
             </div>
 
-            
             <div class="col-4">
                 <a href="#" target="_blank">
                     <div class="image-box">
